@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<root>
+	<options id="userstatus">
+		<option data="A">Active</option>
+		<option data="I">Inactive</option>
+	</options>
+	<options id="usergroup">
+		<option data="">Select one</option>
+		<option data="A">Agent</option>
+		<option data="U">Underwriter</option>
+		<option data="S">Administrator</option>
+	</options>
+</root>

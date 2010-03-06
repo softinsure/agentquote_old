@@ -1,0 +1,4 @@
+<TextFlow xmlns="http://ns.adobe.com/textLayout/2008">
+	<div fontSize="24">Header</div>
+	<p>This is a test showing <span baselineShift="superscript">2</span> typographical<span baselineShift="subscript">3</span> controls.</p>
+</TextFlow>
