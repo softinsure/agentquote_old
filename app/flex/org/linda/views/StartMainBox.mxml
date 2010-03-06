@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layouts:VLayout xmlns="layouts.*"
+				  xmlns:fx="http://ns.adobe.com/mxml/2009"
+				  xmlns:s="library://ns.adobe.com/flex/spark"
+				  xmlns:mx="library://ns.adobe.com/flex/halo"
+				  width="100%"
+				  height="100%"
+				  creationComplete="init()"
+				  xmlns:layouts="org.ludo.layouts.*">
+	<fx:Script>
+		<![CDATA[
+			import flashx.textLayout.container.ContainerController;
+			import flashx.textLayout.elements.TextFlow;
+			
+			import org.common.utils.XTextLayout;
+			private var textFlow:TextFlow;
+			private var controller:ContainerController;
+
+			private function init():void
+			{
+				//this.title="An easy Insurance Solution with new ACORD Framework";
+				/*
+				var text:String=<TextFlow xmlns="http://ns.adobe.com/textLayout/2008"><div>
+							<p>
+							This is a test showing <span baselineShift="superscript">2</span> typographical<span baselineShift="subscript">3</span> controls.
+				</p>
+				</div>
+				</TextFlow>;
+				*/
+				//contentGroup.addElement(XTextLayout.XTextFlow(text));
+				//contentGroup.addElement(XTextLayout.XTextFlowLoader("xmlstores/textflows/startmain.xml",""));
+				XTextLayout.XTextFlowLoader(this,"xmlstores/textflows/startmain.xml","assets/css/textflows/startmain.css",null,false,this.width);
+			}
+		]]>
+	</fx:Script>
+	<!--
+	<s:Group fontSize="12" id="contentGroup" width="100%" height="100%">
+		
+	</s:Group>
+	-->
+</layouts:VLayout>
