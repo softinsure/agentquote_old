@@ -32,7 +32,8 @@ class FileReaderController < ApplicationController
   end
   def read_xml(filepath,key)
       #read file from directory
-      filename=RAILS_ROOT+"/app/flex/"+filepath;
+      #filename=RAILS_ROOT+"/app/flex/"+filepath;
+      filename=RAILS_ROOT+"/app/"+filepath;
       return XmlSimple.xml_in(filename,{ 'KeyAttr' => key})
       rescue => e
         file_error(e);
@@ -40,7 +41,8 @@ class FileReaderController < ApplicationController
   private
   def read_config_file(filepath)
       #read file from directory
-      filename=RAILS_ROOT+"/app/flex/"+filepath;
+      #filename=RAILS_ROOT+"/app/flex/"+filepath;
+      filename=RAILS_ROOT+"/app/"+filepath;
       return (File.open(filename).read);
       #return (File.open(filename).read).gsub(/\r\n|\n|\t|\r|\xEF\xBB\xBF/,"");
       rescue => e

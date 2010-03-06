@@ -19,7 +19,8 @@ package org.linda.commands
 			//new ConfigLoder().loadXmlxByConfig("xmlstores/config/initialxmlstoload.xml",loadScreen);
             var xmlloader:XmlLoder=new XmlLoder();
             xmlloader.setFuncToBeCalledAfterLoad(loadScreen);
-            xmlloader.loadXmlxByConfig("xmlstores/config/initialxmlstoload.xml");              
+            //xmlloader.loadXmlxByConfig("xmlstores/initialxmlstoload.xml");              
+			xmlloader.loadXmlxByConfig("config/initializers/initialxmlstoload.xml");              
         }
 
 		public function loadScreen():void

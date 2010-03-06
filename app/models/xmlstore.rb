@@ -31,7 +31,8 @@ class Xmlstore < ActiveRecord::Base
   end
   def accord_file
       #read file from directory
-      filename=RAILS_ROOT+"/app/flex/xmlstores/accord/request_pa.xml";
+      #filename=RAILS_ROOT+"/app/flex/xmlstores/accord/request_pa.xml";
+      filename=RAILS_ROOT+"/app/xmlstores/accord/request_pa.xml";
       #f=File.new(filename,"r");
       #self.xmlstring = f.gets.chomp;
       #self.xmlstring = (File.open(filename).read).gsub(/\r\n|\n|\r|\xEF\xBB\xBF/,"");
@@ -46,7 +47,8 @@ class Xmlstore < ActiveRecord::Base
   end
   def self.get_accord_file
       #read file from directory
-      filename=RAILS_ROOT+"/app/flex/xmlstores/accord/request_pa.xml";
+      #filename=RAILS_ROOT+"/app/flex/xmlstores/accord/request_pa.xml";
+      filename=RAILS_ROOT+"/app/xmlstores/accord/request_pa.xml";
       return (File.open(filename).read).gsub(/\r\n|\n|\r|\xEF\xBB\xBF/,"");
       rescue => e
         file_error(e);
